@@ -1,0 +1,93 @@
+:root{
+--dark-cyan: hsl(185, 75%, 39%);
+--dark-grayish-blue: hsl(227, 10%, 46%);
+--dark-gray: hsl(0, 0%, 59%);
+--java: #1EB0BF;
+--viking: #5BC4D0;
+--mosque: #056977;
+--iceberg: #CAEBF1;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Kumbh Sans';
+    text-align: center;
+    background-image: url(images/teal-mountains.jpg);
+    background-size: cover;
+    height: 100vh;
+    max-height: 1000px;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* TYPOGRAPHY */
+.profile-bold-text{
+    font-weight: 700;
+    background: var(--mosque);
+    color: var(--iceberg);
+    padding: .5em;
+}
+.light-text{
+    color: var(--mosque);
+}
+h1, h3{
+    color: var(--mosque);
+
+}
+
+/* LAYOUT */
+
+.header-image{
+    width: 100%;
+    height: 80%;
+    border-radius: 20px 20px 0 0;
+
+}
+.user-icon{
+    border: solid 4px whitesmoke;
+    border-radius: 50px;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 30%;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    margin:0 auto;
+    width: 400px;
+    padding: 0;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 2px 5px 15px rgba(0, 0,0, .1);
+}
+.user-profile-info{
+    background: var(--iceberg);
+    padding: .5em;
+    margin: 1em .5em;
+}
+.name{
+    margin-top: 2em;
+}
+
+.user-stats{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: var(--iceberg) 1px solid;
+
+}
+
+.user-info-card{
+    background: var(--iceberg);
+    width: 30%;
+    padding: .5em;
+    margin: .75em .5em;
+    word-wrap: break-word;
+}
